@@ -1,7 +1,7 @@
 # Authors
 
 This project was developed by:
-Germán Rodríguez Carmona
+Germán Rodríguez Carmona,
 Guillermo Cayetano Rivero
 
 # Getting Started with Create React App
