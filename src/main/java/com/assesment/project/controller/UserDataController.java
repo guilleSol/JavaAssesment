@@ -46,7 +46,10 @@ public class UserDataController {
 	@DeleteMapping(path = "users/{id}")
 	public ResponseEntity<String> deleteUserData(@PathVariable Long id) {
 		Optional<UserData> user = service.getUserDataById(id);
-		if(user.isPresent()) return ResponseEntity.ok("Deleted");
+		if(user.isPresent()) { 
+			service.deleteUserData(user.get());
+			return ResponseEntity.ok("Deleted");
+		}
 		return ResponseEntity.badRequest().body("User does not exist");
 	}
 }
