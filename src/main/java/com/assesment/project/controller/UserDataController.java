@@ -12,7 +12,7 @@ import com.assesment.project.entities.UserData;
 import com.assesment.project.service.UserDataService;
 
 @RestController
-//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserDataController {
 
 	@Autowired
