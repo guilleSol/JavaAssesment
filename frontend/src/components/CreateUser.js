@@ -1,3 +1,5 @@
+import "./CreateUser.css";
+
 function postUser(event) {
     event.preventDefault();
   // Simple POST request with a JSON body using fetch
@@ -17,17 +19,18 @@ function postUser(event) {
 
 function CreateUser() {
   return (
-    <div>
-      <form onSubmit={postUser}>
-        <label>First name: </label>
+    <div id="createUserDiv">
+      <form id="userForm" onSubmit={postUser}>
+        <label className="userLabel">First name: </label>
         <input id="fname" type="text" />
-        <label>Last name: </label>
+        <label className="userLabel">Last name: </label>
         <input id="lname" type="text" />
-        <label>Phone number </label>
+        <label className="userLabel">Phone number </label>
         <input id="pnumber" type="text" />
-        <label>Email: </label>
+        <label className="userLabel">Email: </label>
         <input id="email" type="text" />
-        <input
+        <br></br>
+        <input id="createUserBtn"
           type="submit"
           value={"Create user"}
         />

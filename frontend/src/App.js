@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-// import "./components/FindUser";
-// import "./components/CreateUser";
 import CreateUser from "./components/CreateUser";
 import FindUser from "./components/FindUser";
 
@@ -12,8 +10,14 @@ function App() {
     return (
       <>
         <h1>Home</h1>
-        <button onClick={() => setPage("findUser")}>Find User</button>
-        <button onClick={() => setPage("createUser")}>Create User</button>
+        <div id="buttonDiv">
+          <button class="btn first" onClick={() => setPage("findUser")}>
+            Find User
+          </button>
+          <button class="btn first" onClick={() => setPage("createUser")}>
+            Create User
+          </button>
+        </div>
       </>
     );
   }
@@ -22,7 +26,7 @@ function App() {
     return (
       <>
         <h1>Find User</h1>
-        <FindUser/>
+        <FindUser />
       </>
     );
   }
