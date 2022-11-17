@@ -1,0 +1,1 @@
+INSERT INTO USER_DATA VALUES (1, 'pepe@gmail.com','Pepe','Trujillo','654987235');
