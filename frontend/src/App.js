@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import "./components/FindUser";
-import "./components/CreateUser";
+// import "./components/FindUser";
+// import "./components/CreateUser";
 import CreateUser from "./components/CreateUser";
+import FindUser from "./components/FindUser";
 
 function App() {
   const [page, setPage] = useState("home"); // page = "createUser" "findUser" "home"
@@ -21,7 +22,7 @@ function App() {
     return (
       <>
         <h1>Find User</h1>
-        <indUser />
+        <FindUser/>
       </>
     );
   }
